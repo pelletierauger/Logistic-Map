@@ -1,0 +1,3 @@
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-%05d.png -vf palettegen palette-logistic-map.png
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-%05d.png -i palette-logistic-map.png -lavfi paletteuse -s 600x600 logistic-map-600x600.gif
