@@ -1,3 +1,22 @@
 ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-%05d.png -vf palettegen palette-logistic-map.png
 
 ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-%05d.png -i palette-logistic-map.png -lavfi paletteuse -s 600x600 logistic-map-600x600.gif
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-2/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p -shortest logistic-map-2.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-3/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p -shortest logistic-map-3.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-4/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p logistic-map-4.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-5/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p logistic-map-5.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-6/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p logistic-map-6.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-7/logistic-map-%05d.png -c:v libx264 -pix_fmt 
+yuv420p logistic-map-7.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-8/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p logistic-map-8.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-9/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p logistic-map-9.mp4
+
+ffmpeg -f image2 -framerate 24 -i ./frames/logistic-map-10/logistic-map-%05d.png -c:v libx264 -pix_fmt yuv420p logistic-map-10.mp4
